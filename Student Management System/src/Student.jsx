@@ -5,8 +5,8 @@ import CardStud from "./components/CardStud/CardStud";
 import Footer from "./components/Footer/Footer";
 import { Box, Button, Snackbar, Alert, CircularProgress } from "@mui/material";
 import { Link } from "react-router-dom";
-import img1 from "./assets/fperson.png";   // female
-import img2 from "./assets/persons.png";   // male/default
+import img1 from "./assets/fperson.png";   
+import img2 from "./assets/persons.png";   
 
 const API = "http://localhost:5000/students";
 
