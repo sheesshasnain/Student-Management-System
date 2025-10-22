@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 import "./StudentDetails.css";
-import img1 from "./assets/fperson.png"; // female fallback
-import img2 from "./assets/persons.png"; // male/default fallback
+import img1 from "./assets/fperson.png"; 
+import img2 from "./assets/persons.png"; 
 
 const API = "http://localhost:5000/students";
 
