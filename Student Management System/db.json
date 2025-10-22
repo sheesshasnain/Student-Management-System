@@ -1,0 +1,30 @@
+{
+  "students": [
+    {
+      "id": "L1S22BSCS0666",
+      "name": "Muzan Kibutsuji",
+      "rollNo": "L1S22BSCS0666",
+      "subject": "Hashira Slayer",
+      "degree": "Demon King",
+      "department": "Demon",
+      "age": 30000,
+      "grade": "A",
+      "cgpa": 4,
+      "gender": "male",
+      "img": "/src/assets/persons.png"
+    },
+    {
+      "id": "dead099",
+      "name": "Rengoku",
+      "rollNo": "dead099",
+      "subject": "Hunter",
+      "degree": "Demon Hunter",
+      "department": "Demon Slayer Corpse",
+      "age": 999,
+      "grade": "A",
+      "cgpa": 4,
+      "gender": "female",
+      "img": "/src/assets/fperson.png"
+    }
+  ]
+}

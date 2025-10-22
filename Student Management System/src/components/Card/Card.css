@@ -1,0 +1,50 @@
+.studCard {
+  width: 250px;
+  padding: 20px;
+  background-color: aqua;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  transition: 1s; 
+}
+
+.description {
+  text-align: center; 
+}
+
+.personImg {
+  width: 120px;   
+  height: auto;
+  border-radius: 100%; 
+  transition: 0.3s;
+}
+.personImg:hover{
+width: 160px;
+}
+.studCard:hover{
+    width: 300px;
+    height: auto;
+    color: red;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    
+}
+
+.Heading{
+  padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    background-color: greenyellow;
+    transition: 0.5s;
+}
+
+.Heading:hover{
+    font-size: 45px;
+    cursor: pointer;
+    color: red;
+
+}

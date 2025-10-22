@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer{
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  gap: 50px;                
+  flex-wrap: wrap;          
+  min-height: 80vh;        
+  background: white;      
+  
+}
+
+
+
