@@ -9,7 +9,6 @@ const API = "http://localhost:5000/students";
 export default function StudentForm() {
   const navigate = useNavigate();
 
-  // form fields
   const [name, setName] = useState("");
   const [rollNo, setRollNo] = useState("");
   const [subject, setSubject] = useState("");
@@ -20,10 +19,9 @@ export default function StudentForm() {
   const [cgpa, setCgpa] = useState("");
   const [gender, setGender] = useState("");
 
-  // MUI alert
   const [snack, setSnack] = useState({
     open: false,
-    severity: "success", // "success" | "error"
+    severity: "success", 
     message: "",
   });
   const closeSnack = (_, reason) => {
@@ -34,21 +32,19 @@ export default function StudentForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // tiny required check
     if (!name.trim() || !rollNo.trim()) {
       setSnack({ open: true, severity: "error", message: "Name & Roll No are required." });
       return;
     }
 
     try {
-      // check duplicate by rollNo
       const { data: dup } = await axios.get(`${API}?rollNo=${encodeURIComponent(rollNo.trim())}`);
       if (Array.isArray(dup) && dup.length > 0) {
         setSnack({ open: true, severity: "error", message: `Roll No "${rollNo}" already exists.` });
         return;
       }
 
-      // create (keep it simple; id = rollNo)
+      
       const newStudent = {
         id: rollNo.trim(),
         name: name.trim(),
@@ -66,7 +62,6 @@ export default function StudentForm() {
 
       setSnack({ open: true, severity: "success", message: "Student added successfully!" });
 
-      // clear + go back after a short delay so the user sees the success
       setName(""); setRollNo(""); setSubject(""); setDegree("");
       setDepartment(""); setAge(""); setGrade(""); setCgpa(""); setGender("");
 
